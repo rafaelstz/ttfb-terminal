@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ]; then
+    echo "Usage
+    
+    $ ttfb google.com
+    "
+else
+    curl -so /dev/null -w "Connect: %{time_connect} \nTTFB: %{time_starttransfer} \nTotal time: %{time_total} \n" "$1"
+fi
