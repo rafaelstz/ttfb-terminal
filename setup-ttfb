@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+curl -O https://raw.githubusercontent.com/rafaelstz/ttfb-terminal/master/ttfb &&
+sudo mv ./ttfb /usr/local/bin/ttfb &&
+sudo chmod +x /usr/local/bin/ttfb &&
+echo "
+TTFB sucessfully installed! 🎉
+
+$ ttfb google.com
+"
